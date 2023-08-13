@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "more-slabs-stairs-and-walls",
+	"version": "${version}",
+	"name": "More Slabs Stairs and Walls",
+	"description": "Adds more slabs stairs and walls!",
+	"authors": [
+		"Batman_gy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC-BY-NC-4.0",
+	"icon": "assets/more-slabs-stairs-and-walls/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.batman_gy.moreslabsstairsandwalls.MoreSlabsStairsandWalls"
+		],
+		"client": [
+			"net.batman_gy.moreslabsstairsandwalls.MoreSlabsStairsandWallsClient"
+		],
+		"fabric-datagen": [
+			"net.batman_gy.moreslabsstairsandwalls.MoreSlabsStairsandWallsDataGenerator"
+		]
+	},
+	"mixins": [
+		"more-slabs-stairs-and-walls.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
